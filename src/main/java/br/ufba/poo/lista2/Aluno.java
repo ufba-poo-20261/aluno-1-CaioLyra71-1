@@ -30,6 +30,9 @@ public class Aluno {
         return matricula;
     }
 
+    public boolean verificaIgualdade(Aluno aluno){
+        return this.matricula.equals(aluno.matricula);
+    }
 
     public Aluno(String matricula, String nome) {
         this.matricula = matricula;
