@@ -16,8 +16,8 @@ package br.ufba.poo.lista2;
  */
 public class Aluno {
 
-    public String nome;
-    public String matricula;
+    private String nome;
+    private  String matricula;
 
     public String getNome() {
         return nome;
@@ -30,8 +30,9 @@ public class Aluno {
         return matricula;
     }
 
-    public boolean verificaIgualdade(Aluno aluno){
-        return this.matricula.equals(aluno.matricula);
+    public boolean equals(Object o){
+        Aluno outro = (Aluno) o;
+        return this.matricula.equals(outro.matricula);
     }
 
     public Aluno(String matricula, String nome) {
